@@ -1,0 +1,222 @@
+@font-face {
+  font-family: iranSans;
+  src: url("../fonts/iran-sans/IRANSans-Medium.woff") format("woff");
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: iranSans !important;
+  background-color: #f8f3e8 !important;
+  scroll-behavior: smooth;
+}
+
+.--green {
+  background-color: #004236;
+}
+
+.--yellow {
+  background-color: #d6ce4b;
+}
+
+.--greenTxt {
+  color: #004236;
+}
+
+.--yellowTxt {
+  color: #d6ce4b;
+}
+
+a {
+  text-decoration: none !important;
+  color: white !important;
+  font-size: 23px;
+}
+
+#navbar-bigScreen #navbar-list a {
+  padding: 10px;
+  transition: 0.5s;
+}
+#navbar-bigScreen #navbar-list a:hover {
+  color: #d6ce4b !important;
+}
+
+#menu-overlay-small-screen-whole-con {
+  height: 100vh;
+  background: rgba(235, 226, 226, 0.8);
+}
+#menu-overlay-small-screen-whole-con nav p a {
+  color: #004236 !important;
+  font-size: 30px;
+}
+
+#first-con #second-sec-in-first-con h1 {
+  color: #004236;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 80px;
+  line-height: 90%;
+}
+#first-con #second-sec-in-first-con #persian-details-text p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#first-con-sm h1 {
+  color: #004236;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 60px;
+  text-align: left !important;
+  z-index: 1;
+}
+@media only screen and (max-width: 370px) {
+  #first-con-sm h1 {
+    font-size: 40px;
+  }
+}
+#first-con-sm #biggest-pic {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+#first-con-sm #vertical-text {
+  writing-mode: vertical-lr;
+  position: absolute;
+  margin-top: 170px !important;
+}
+#first-con-sm #persian-details-text-sm p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#first-slider-whole-con {
+  background-color: #004236;
+  color: white;
+}
+#first-slider-whole-con #first-slider-sec div {
+  padding: 0px 3px;
+}
+#first-slider-whole-con #first-slider-sec div p {
+  text-align: right;
+}
+
+#brands-whole-con .img-wrapper {
+  position: relative;
+}
+#brands-whole-con .img-wrapper::before, #brands-whole-con .img-wrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #004236;
+  transition: all 0.25s ease-out;
+  z-index: -1;
+}
+#brands-whole-con .img-wrapper::before {
+  border: 2px solid #004236;
+  top: -10px;
+  left: -10px;
+}
+#brands-whole-con .img-wrapper::after {
+  bottom: -10px;
+  right: -10px;
+}
+#brands-whole-con .img-wrapper:hover::before {
+  top: 10px;
+  left: 10px;
+}
+#brands-whole-con .img-wrapper:hover::after {
+  bottom: 10px;
+  right: 10px;
+}
+#brands-whole-con button {
+  background-color: #d6ce4b;
+  border: 2px solid #d6ce4b;
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+#brands-whole-con button a {
+  font-size: 17px;
+  color: #004236 !important;
+}
+#brands-whole-con button:hover {
+  background-color: #004236;
+  border-color: #004236;
+}
+#brands-whole-con button:hover a {
+  color: white !important;
+}
+
+.dashed-details a {
+  font-size: large;
+  border-bottom: 1px solid #d6ce4b;
+}
+
+#about-us-whole-con {
+  background-color: black;
+}
+#about-us-whole-con #about-us-con {
+  position: relative;
+  height: 100vh;
+}
+#about-us-whole-con #about-us-con::before {
+  content: "";
+  background-image: url("img/aboutUS.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+}
+#about-us-whole-con #about-us-text-sec {
+  position: relative;
+  color: #004236;
+  text-align: justify;
+  background: rgba(235, 226, 226, 0.7);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#about-us-whole-con #about-us-text-sec #shop-name {
+  border-bottom: 1px solid #004236;
+}
+#about-us-whole-con #about-us-text-sec p:last-child {
+  text-align: justify;
+}
+#about-us-whole-con #developer a {
+  color: #004236 !important;
+  font-size: small;
+}
+
+.---latest-products-persian-detail {
+  padding-top: 10px !important;
+}
+.---latest-products-persian-detail button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+.---latest-products-persian-detail button a {
+  font-size: 17px;
+}
+.---latest-products-persian-detail button:hover {
+  background-color: #d6ce4b;
+  border-color: #d6ce4b;
+}
+.---latest-products-persian-detail button:hover a {
+  color: #004236 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .slick-prev, .slick-next {
+    z-index: 1;
+  }
+  .slick-prev {
+    right: 14px !important;
+  }
+  .slick-next {
+    left: 14px !important;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map */

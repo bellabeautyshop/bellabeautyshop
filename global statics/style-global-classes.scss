@@ -1,0 +1,37 @@
+@use 'style-global-colors' as colors;
+@use 'style-global-fonts' as fonts;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: iranSans !important;
+    background-color: colors.$main-white !important;
+    scroll-behavior: smooth;
+}
+
+// devs color
+.--green {
+    background-color: colors.$main-green;
+}
+
+.--yellow {
+    background-color: colors.$main-yellow;
+}
+//
+
+// text color
+.--greenTxt {
+    color: colors.$main-green;
+}
+
+.--yellowTxt {
+    color: colors.$main-yellow;
+}
+//
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+    font-size: 23px;
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="--------------------------"/>
+  <meta name="description" content="---------------------"/>
+  <meta name="author" content="unixnexo"/>
+  <!-- title bar -->
+  <title>-----------</title>
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="style-index.css"/>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    
+    <header>
+        <!-- navbar | big screen -->
+        <div class="container-fluid d-md-block d-none">
+            <div class="row">
+
+                <nav id="navbar-bigScreen" class="--green p-2">
+                    <img src="img/logo.png" class="img-fluid float-start" alt="logo" width="40px"/>
+                    <div id="navbar-list" class="d-inline-block">
+                        <a href="">محصولات</a>
+                        <a href="" onclick="scrollToElement('brands-whole-con'); return false;">برندها</a>
+                        <a href="" onclick="scrollToElement('how-to-but-whole-con'); return false;">نحوه ی خرید</a>
+                        <a href="" onclick="scrollToElement('about-us-whole-con'); return false;">درباره ی ما</a>
+                    </div>
+                </nav>
+                
+            </div>
+        </div>
+
+        <!-- menu overlay | small screen -->
+        <div id="menu-overlay-small-screen-whole-con" class="container-fluid d-md-none d-none position-absolute position-fixed z-3 d-flex justify-content-center align-items-center">
+            <div class="row">
+
+                <div class="text-center mt-3 p-0 m-0" onclick="closeMenuOverlaySmScreen();">
+                    <img src="img/x.png" class="img-fluid" alt="close icon" style="width: 30px;"/>
+                </div>
+
+                <nav class="text-center py-5 my-5">
+                    <p>
+                        <a href="">محصولات</a>
+                    </p>
+                    <p>
+                        <a href="" onclick="scrollToElement('brands-whole-con'); return false;">برندها</a>
+                    </p>
+                    <p>
+                        <a href="" onclick="scrollToElement('how-to-but-whole-con'); return false;">نحوه ی خرید</a>
+                    </p>
+                    <p>
+                        <a href="" onclick="scrollToElement('about-us-whole-con'); return false;">درباره ی ما</a>
+                    </p>
+                </nav>
+
+                <div class="text-center me-auto">
+                    <a href="">
+                        <img src="img/instagram.png" class="img-fluid" alt="instagram icon" style="width: 35px;"/>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- navbar | small screen -->
+        <div id="navbar-small-screen-whole-con" class="container-fluid d-md-none d-block z-2">
+            <div class="row">
+
+                <nav id="navbar-smallScreen" class="--green p-2 d-flex justify-content-between px-3">
+                    <img onclick="openMenuOverlaySmScreen();" src="img/smallMenu.png" class="img-fluid" alt="menu" style="width: 27px;"/>
+                    <img src="img/logo.png" class="img-fluid" alt="logo" width="40px"/>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- first, main section | big screen -->
+        <div id="first-con" class="container-fluid d-md-block d-none">
+            <div class="row d-flex justify-content-center align-items-center">
+
+                <div class="col-6 px-0">
+                    <img src="img/biggest.jpg" class="img-fluid px-0" alt="biggest picture of the product">
+                </div>
+
+                <div id="second-sec-in-first-con" class="col-6 text-center">
+                    <h1 class="p-0 m-0 pb-2" dir="ltr">Bella Beauty Shop</h1>
+                    <p class="m-0" dir="ltr"><small class="text-black-50">Beauty, cosmetic & personal care</small></p>
+                    <div id="persian-details-text" class="float-center">
+                        <div>
+                            <img src="img/face.png" class="img-fluid" alt="face icon" style="width: 20px;"/>
+                            <p class="d-inline-block">محصولات مراقبت از پوست و مو</p>
+                        </div>
+                        <div>
+                            <img src="img/airplane.png" class="img-fluid" alt="airplane icon" style="width: 20px;"/>
+                            <p class="d-inline-block">ارسال به همه نقاط ایران</p>
+                        </div>
+                        <div>
+                            <img src="img/britain.png" class="img-fluid" alt="britain icon" style="width: 20px;"/>
+                            <img src="img/canada.png" class="img-fluid" alt="canada icon" style="width: 20px;"/>
+                            <p class="d-inline-block">خرید مستقیم از انگلیس و کانادا</p>
+                        </div>
+                        <div>
+                            <img src="img/quality.png" class="img-fluid" alt="quality icon" style="width: 20px;"/>
+                            <p class="d-inline-block">تضمین اصل بودن محصولات</p>
+                        </div>
+                        <div>
+                            <img src="img/animal.png" class="img-fluid" alt="animal icon" style="width: 20px;"/>
+                            <p class="d-inline-block">فاقد تست حیوانی</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- first, main section | small screen -->
+        <div id="first-con-sm" class="container-fluid d-md-none d-block">
+            <div class="row d-flex justify-content-center">
+
+                <h1 class="text-center position-absolute" dir="ltr">Bella Beauty Shop</h1>
+                <img id="biggest-pic" src="img/biggest.jpg" class="img-fluid" alt="biggest picture of the product">
+                <p id="vertical-text" class="m-0" dir="ltr"><small class="text-black-50">Beauty, cosmetic & personal care</small></p>
+
+                <div id="persian-details-text-sm" class="py-3">
+                    <div>
+                        <img src="img/face.png" class="img-fluid" alt="face icon" style="width: 20px;"/>
+                        <p class="d-inline-block">محصولات مراقبت از پوست و مو</p>
+                    </div>
+                    <div>
+                        <img src="img/airplane.png" class="img-fluid" alt="airplane icon" style="width: 20px;"/>
+                        <p class="d-inline-block">ارسال به همه نقاط ایران</p>
+                    </div>
+                    <div>
+                        <img src="img/britain.png" class="img-fluid" alt="britain icon" style="width: 20px;"/>
+                        <img src="img/canada.png" class="img-fluid" alt="canada icon" style="width: 20px;"/>
+                        <p class="d-inline-block">خرید مستقیم از انگلیس و کانادا</p>
+                    </div>
+                    <div>
+                        <img src="img/quality.png" class="img-fluid" alt="quality icon" style="width: 20px;"/>
+                        <p class="d-inline-block">تضمین اصل بودن محصولات</p>
+                    </div>
+                    <div>
+                        <img src="img/animal.png" class="img-fluid" alt="animal icon" style="width: 20px;"/>
+                        <p class="d-inline-block">فاقد تست حیوانی</p>
+                    </div>
+                </div>
+            
+
+            </div>
+        </div>
+
+        <!-- first slider - latest products -->
+        <div id="first-slider-whole-con" class="container-fluid overflow-x-hidden" dir="ltr">
+            <div class="row py-5 px-md-5">
+
+                <h2 class="text-center">جدیدترین محصولات</h2>
+
+                <section id="first-slider-sec" class="responsive mt-3">
+                    <div>
+                        <img src="img/s1.jpeg" class="img-fluid" alt="latest products"/>
+                        <div class="text-center ---latest-products-persian-detail">
+                            <p class="p-0 m-0">کرم خشک کننده ی باسن</p>
+                            <p class="p-0 m-0">120,000</p>
+                            <button class="mt-3"><a href="">مشاهده</a></button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/s2.jpeg" class="img-fluid" alt="latest products"/>
+                        <div class="text-center ---latest-products-persian-detail">
+                            <p class="p-0 m-0">کرم خشک کننده ی باسن</p>
+                            <p class="p-0 m-0">120,000</p>
+                            <button class="mt-3"><a href="">مشاهده</a></button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/s3.jpeg" class="img-fluid" alt="latest products"/>
+                        <div class="text-center ---latest-products-persian-detail">
+                            <p class="p-0 m-0">کرم خشک کننده ی باسن</p>
+                            <p class="p-0 m-0">120,000</p>
+                            <button class="mt-3"><a href="">مشاهده</a></button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/s4.jpeg" class="img-fluid" alt="latest products"/>
+                        <div class="text-center ---latest-products-persian-detail">
+                            <p class="p-0 m-0">کرم خشک کننده ی باسن</p>
+                            <p class="p-0 m-0">120,000</p>
+                            <button class="mt-3"><a href="">مشاهده</a></button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/s5.jpeg" class="img-fluid" alt="latest products"/>
+                        <div class="text-center ---latest-products-persian-detail">
+                            <p class="p-0 m-0">کرم خشک کننده ی باسن</p>
+                            <p class="p-0 m-0">120,000</p>
+                            <button class="mt-3"><a href="">مشاهده</a></button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/s6.jpeg" class="img-fluid" alt="latest products"/>
+                        <div class="text-center ---latest-products-persian-detail">
+                            <p class="p-0 m-0">کرم خشک کننده ی باسن</p>
+                            <p class="p-0 m-0">120,000</p>
+                            <button class="mt-3"><a href="">مشاهده</a></button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/s7.jpeg" class="img-fluid" alt="latest products"/>
+                        <div class="text-center ---latest-products-persian-detail">
+                            <p class="p-0 m-0">کرم خشک کننده ی باسن</p>
+                            <p class="p-0 m-0">120,000</p>
+                            <button class="mt-3"><a href="">مشاهده</a></button>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- brands -->
+        <div id="brands-whole-con" class="container-fluid mt-5">
+            <div class="row text-center mx-auto">
+
+                <h2 class="--greenTxt pb-3">برندها</h2>
+
+                <div class="col-md-6 mb-md-0 mb-5 px-4">
+                    <div class="img-wrapper">
+                        <img src="img/b1.jpg" class="img-fluid" alt="brand's name">
+                    </div>
+                    <h3 class="mt-4 --greenTxt">The Ordinary</h3>
+                    <button class="mt-1"><a href="">محصولات</a></button>
+                </div>
+
+                <div class="col-md-6 px-4">
+                    <div class="img-wrapper">
+                        <img src="img/biggest.jpg" class="img-fluid" alt="brand's name">
+                    </div>
+                    <h3 class="mt-4 --greenTxt">The Body Shop</h3>
+                    <button class="mt-1"><a href="">محصولات</a></button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- how to buy -->
+        <div id="how-to-but-whole-con" class="container-fluid --green mt-5">
+            <div class="row py-5 text-white">
+
+                <h2 class="text-center">نحوه ی خرید</h2>
+
+                <div class="col-md-8 col-12 mx-auto mt-3">
+                    
+                    <div class="text-end">
+                        <img src="img/one.png" class="img-fluid" alt="first choice"/>
+                        <h5 class="d-inline">ثبت سفارش از طریق پیج اینستاگرام:</h5>
+                    </div>
+                    <di class="dashed-details">
+                        <img src="img/dash.png" class="img-fluid" alt="first choice details" style="width: 30px;"/>
+                        <p class="d-inline">از طریق پیچ به آدرس <a dir="ltr" href="">bella_beautyshop_</a> میتونید ثبت سفارش کنید. فقط کافیه کد محصول یا عکس به همراه اسم رو ارسال کنید به دایرکت.</p>
+                    </di>
+
+                    <div class="text-end mt-4">
+                        <img src="img/two.png" class="img-fluid" alt="second choice" style="width: 24px;"/>
+                        <h5 class="d-inline">ثبت سفارش از طریق وبسایت:</h5>
+                    </div>
+                    <div class="dashed-details float-end">
+                        <img src="img/dash.png" class="img-fluid" alt="first choice details" style="width: 30px;"/>
+                        <p class="d-inline">در حال حاضر این امکان وجود نداره.</p>
+                    </div>
+
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- about us -->
+        <div id="about-us-whole-con" class="container-fluid">
+            <div id="about-us-con" class="row d-flex justify-content-center align-items-center">
+                                
+                <div id="about-us-text-sec" class="col-md-5 col-11 p-3 --greenTxt">
+                    <p id="shop-name" class="d-inline float-start">Bella Beauty Shop</p>
+                    <p class="d-inline float-end">تاسیس: 1402 - 2023</p>
+                    <br/>
+                    <p class="mt-5">برند بلا زیبایی توسط نیلوفر خانوم تاسیس و پا به بازار جهانی نمود. این برند تمرکز اصلی بر روری اراعه محصولات زیبایی اصل به هم وتنان کشورمان داره. یکی از سخت ترین کارهای این برند وارد کردن محصولات است که با توقه بر قوه ی خداوند متعالی توانسته ایم سربلند باشیم.</p>
+                    <hr/>
+                    <div dir="ltr">
+                        <small><p>All rights are reserverd for <i>Bella Beauty Shop</i> &copy;&reg;</p></small>
+                        <p><small>We are an independent online store and we are NOT an official or authorized seller of any brand mentioned in the website, including <i>The Body Shop</i>, <i>The Ordinary</i>, etc. As there is no Official Retailer in Iran.</small></p>
+                    </div>
+                    <hr/>
+                    <div id="developer" class="d-flex justify-content-center">
+                        <p><small>Designed and developed by <a target="_blank" href="https://github.com/unixnexo">unixnexo</a></small></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- go to top -->
+        <div onclick="scrollToTop();" id="go-to-top-sec" class="container-fluid --yellow fixed-bottom rounded-top-4 mx-auto z-3" style="width: 40px; display: none; cursor: pointer;">
+            <div class="row">
+
+                <img src="img/goToTop.png" class="img-fluid m-1 mx-auto" alt="go to top icon"/>
+
+            </div>
+        </div>
+
+    </main>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="script-index.js"></script>
+<script>
+    // 1st slider - latest products
+    $(document).on('ready', function() {
+        $('.responsive').slick({
+        // dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        autoplay: true,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                // dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+        });
+    });
+</script>
+</body>
+</html>

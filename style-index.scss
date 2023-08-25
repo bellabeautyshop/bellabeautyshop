@@ -1,0 +1,263 @@
+// global classes | which has '--' prefix to each class
+@use 'global statics/style-global-classes' as classess;
+// colors
+@use 'global statics/style-global-colors' as colors;
+
+
+
+// navbar | big screen
+#navbar-bigScreen {
+    #navbar-list {
+        a {
+            padding: 10px;
+            transition: .5s;
+        }
+        
+        a:hover {
+            color: colors.$main-yellow !important;
+        }
+    }
+}
+
+
+// navbar | small screen
+#menu-overlay-small-screen-whole-con {
+    height: 100vh;
+    background: rgba(235,226,226, 0.8);
+
+    nav p {
+
+        a {
+            color: colors.$main-green !important;
+            font-size: 30px;
+        }
+    } 
+
+}
+
+
+// first, main section | big screen
+#first-con {
+    #second-sec-in-first-con {
+        h1 {
+            color: colors.$main-green;
+            font-family: Arial, Helvetica, sans-serif !important;
+            font-size: 80px;
+            line-height: 90%;
+        }
+
+        #persian-details-text {
+            p {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+        }
+    }
+}
+
+
+// first, main section | small screen
+#first-con-sm {
+    h1 {
+        color: colors.$main-green;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 60px;
+        text-align: left !important;
+        z-index: 1;
+    }
+
+    @media only screen and (max-width: 370px) {
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    #biggest-pic {
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+
+    #vertical-text {
+        writing-mode: vertical-lr;
+        position: absolute;
+        margin-top: 170px !important;
+    }
+
+    #persian-details-text-sm {
+        p {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    }
+}
+
+
+// first slider, latest products
+#first-slider-whole-con {
+    background-color: colors.$main-green;
+    color: white;
+    #first-slider-sec {
+        div {
+                padding: 0px 3px;  
+            p {
+                text-align: right;
+            }
+        }
+    }
+}
+
+
+// brands
+#brands-whole-con {
+    .img-wrapper {
+        position: relative;
+        &::before,
+        &::after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          border: 2px solid colors.$main-green;
+          transition: all .25s ease-out;
+          z-index: -1;
+        }
+        &::before {
+          border: 2px solid colors.$main-green;
+          top: -10px;
+          left: -10px;
+        }
+        &::after {
+          bottom: -10px;
+          right: -10px;
+        }
+        &:hover {
+          &::before {
+            top: 10px;
+            left: 10px;
+          }
+          &::after {
+            bottom: 10px;
+            right: 10px;
+          }
+        }
+      }
+
+    button {
+        background-color: colors.$main-yellow;
+        border: 2px solid colors.$main-yellow;
+        padding: 5px 10px;   
+        transition: .5s; 
+    }
+
+    button a {
+        font-size: 17px;
+        color: colors.$main-green !important;
+    }
+
+    button:hover {
+        background-color: colors.$main-green;
+        border-color: colors.$main-green;
+    }
+
+    button:hover a {
+        color: white !important;
+    }
+}
+
+
+// how to buy
+.dashed-details {
+    a {
+        font-size: large;
+        border-bottom: 1px solid colors.$main-yellow;
+    }
+}
+
+
+// about us
+#about-us-whole-con {
+    background-color: black;
+
+    #about-us-con {
+        position: relative; 
+        height: 100vh;
+    }
+
+    #about-us-con::before {
+        content: "";
+        background-image: url('img/aboutUS.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.6;
+    }
+    
+    #about-us-text-sec {
+        position: relative;
+        color: colors.$main-green;  
+        text-align: justify;
+        background: rgba(235,226,226, 0.7);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    #about-us-text-sec #shop-name {
+        border-bottom: 1px solid colors.$main-green;
+    }
+
+    #about-us-text-sec p:last-child {
+        text-align: justify;
+    }
+
+    #developer {
+        a {
+            color: colors.$main-green !important;
+            font-size: small;
+        }
+    }
+}
+
+
+
+/////////// global //////////////
+.---latest-products-persian-detail {
+    padding-top: 10px !important;
+    button {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 5px 10px;   
+        transition: .5s;
+    }
+
+    button a {
+        font-size: 17px;
+    }
+
+    button:hover {
+        background-color: colors.$main-yellow;
+        border-color: colors.$main-yellow;
+    }
+
+    button:hover a {
+        color: colors.$main-green !important;
+    }
+}
+
+
+// slick slider for sm screens | placement of buttons
+@media only screen and (max-width: 767px) {
+    .slick-prev, .slick-next {
+        z-index: 1;
+    }
+    
+    .slick-prev {
+        right: 14px !important;  
+    }
+    
+    .slick-next {
+        left: 14px !important;  
+    }
+}
